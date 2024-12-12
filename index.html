@@ -67,8 +67,39 @@
             <div class="des">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolor cupiditate veniam ex incidunt commodi laboriosam similique totam optio ut. Iure, ea? Quidem, nemo accusantium expedita repudiandae consequuntur distinctio nam provident consectetur fugiat rerum quis doloremque quaerat esse praesentium commodi veritatis facere doloribus quod quo architecto voluptates ipsam obcaecati voluptas!
             </div>
+            <div class="button">
+                <a href="#"><i class="bi bi-arrow-right"></i> Devamını Oku</a>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="title">
+            My Skills <img src="IMG/computer.png">
+        </div>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="IMG/html.png">
+                <img src="IMG/css-3.png">
+                <img src="IMG/bootstrap.png">
+                <img src="IMG/js.png">
+                <img src="IMG/nodejs.png">
+                <img src="IMG/react.png">
+                <img src="IMG/c-sharp.png">
+                <img src="IMG/netcore.png">
+                <img src="IMG/mssql.png">
+                <img src="IMG/visual-studio.png">
+                <img src="IMG/sql.png">
+                <img src="IMG/git.png">
+                <img src="IMG/github.png">
+            </div>
         </div>
     </div>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    const logosSlide = document.querySelector('.logos-slide');
+    const clonedSlide = logosSlide.cloneNode(true);
+    const logosContainer = document.querySelector('.logos');
+    logosContainer.appendChild(clonedSlide);
+</script>

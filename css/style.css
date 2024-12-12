@@ -53,6 +53,7 @@ header .text nav {
   justify-content: center;
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
+  z-index: 9999 !important;
 }
 header .text nav .menu {
   display: flex;
@@ -114,7 +115,7 @@ header .text .hamburger-menu {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 999 !important;
   margin-top: 5px;
 }
 header .text .hamburger-menu span, header .text .hamburger-menu span::before, header .text .hamburger-menu span::after {
@@ -158,6 +159,7 @@ header .text #check:checked ~ nav {
 header .text #check:checked ~ .hamburger-menu {
   position: fixed;
   right: 10rem;
+  z-index: 99999 !important;
 }
 header .text #check:checked ~ .hamburger-menu span::before {
   background-color: #000000;
@@ -203,12 +205,12 @@ header .text #check:checked ~ .hamburger-menu span::after {
 }
 
 .about {
-  margin: 60px 0px;
+  margin: 100px 0px !important;
 }
 .about .container {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   width: 560px;
 }
@@ -223,14 +225,102 @@ header .text #check:checked ~ .hamburger-menu span::after {
 .about .container .title img {
   width: 25px;
   margin-left: 5px;
+  filter: grayscale(100%);
 }
 .about .container .des {
   font-size: 1.1rem;
   font-weight: 400;
   font-style: normal;
   line-height: 1.2;
+  text-align: center;
+}
+.about .container .button {
+  margin-top: 25px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .container .button a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #d9d9d9;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+  transition: all 0.3s;
+}
+.about .container .button a:hover {
+  background-color: #000000;
+  color: #d9d9d9;
 }
 
+.skills {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.skills .title {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.skills .title img {
+  width: 35px;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+}
+.skills .logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+}
+.skills .logos::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f2f2f2);
+}
+.skills .logos::after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f2f2f2);
+}
+.skills .logos .logos-slide {
+  white-space: nowrap;
+  animation: 20s slide infinite linear;
+}
+.skills .logos .logos-slide img {
+  height: 100px;
+  filter: grayscale(100%);
+  margin: 0 40px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 @media only screen and (max-width: 1250px) {
   header {
     padding-left: 2rem;
@@ -360,15 +450,53 @@ header .text #check:checked ~ .hamburger-menu span::after {
   nav .contact .social a:hover {
     opacity: 1;
   }
+  .logos {
+    overflow: hidden;
+    padding: 30px 0px;
+    background-color: #f2f2f2;
+    position: relative;
+    display: flex;
+  }
+  .logos::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 50px !important;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f2f2f2);
+  }
+  .logos::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 50px !important;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f2f2f2);
+  }
+  .logos .logos-slide {
+    white-space: nowrap;
+    animation: 20s slide infinite linear;
+  }
+  .logos .logos-slide img {
+    height: 75px !important;
+    filter: grayscale(100%);
+    margin: 0 20px !important;
+  }
 }
 @media only screen and (max-width: 560px) {
   .about {
-    margin: 60px 0px;
+    margin: 100px 0px !important;
   }
   .about .container {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     width: 100%;
     padding: 0px 16px;
@@ -390,5 +518,6 @@ header .text #check:checked ~ .hamburger-menu span::after {
     font-weight: 400;
     font-style: normal;
     line-height: 1.2;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
