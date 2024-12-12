@@ -118,7 +118,9 @@ header .text .hamburger-menu {
   z-index: 999 !important;
   margin-top: 5px;
 }
-header .text .hamburger-menu span, header .text .hamburger-menu span::before, header .text .hamburger-menu span::after {
+header .text .hamburger-menu span,
+header .text .hamburger-menu span::before,
+header .text .hamburger-menu span::after {
   content: "";
   display: block;
   height: 5px;
@@ -226,6 +228,11 @@ header .text #check:checked ~ .hamburger-menu span::after {
   width: 25px;
   margin-left: 5px;
   filter: grayscale(100%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.about .container .title img:hover {
+  filter: grayscale(0%);
 }
 .about .container .des {
   font-size: 1.1rem;
@@ -246,7 +253,11 @@ header .text #check:checked ~ .hamburger-menu span::after {
   text-decoration: none;
   color: #000000;
   background-color: #d9d9d9;
-  padding: 0.8rem;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.1rem;
   font-weight: 500;
   font-style: normal;
@@ -273,6 +284,11 @@ header .text #check:checked ~ .hamburger-menu span::after {
   width: 35px;
   margin-bottom: 10px;
   filter: grayscale(100%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.skills .title img:hover {
+  filter: grayscale(0%);
 }
 .skills .logos {
   overflow: hidden;
@@ -311,6 +327,11 @@ header .text #check:checked ~ .hamburger-menu span::after {
   height: 100px;
   filter: grayscale(100%);
   margin: 0 40px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.skills .logos .logos-slide img:hover {
+  filter: grayscale(0%);
 }
 
 @keyframes slide {
@@ -321,6 +342,542 @@ header .text #check:checked ~ .hamburger-menu span::after {
     transform: translateX(-100%);
   }
 }
+.project {
+  width: 100%;
+  height: auto;
+  padding: 0px 5rem;
+  margin-bottom: 100px;
+}
+.project .title {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.project .title img {
+  width: 35px;
+  margin-bottom: 10px;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.project .title img:hover {
+  filter: grayscale(0%);
+}
+.project .projects {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+.project .projects .box {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  transition: all 0.3s;
+}
+.project .projects .box:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.project .projects .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(0%);
+}
+.project .projects .box:hover img {
+  filter: grayscale(100%);
+}
+.project .projects .box .about {
+  position: absolute;
+  top: -100px !important;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: start !important;
+  justify-content: center;
+  padding: 0 20px;
+  overflow-wrap: break-word;
+  overflow: auto;
+  white-space: normal;
+}
+.project .projects .box .about:hover {
+  opacity: 1;
+}
+.project .projects .box .about .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-style: normal;
+  text-align: start;
+  width: 100%;
+}
+.project .projects .box .about .progkod {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.project .projects .box .about a {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.project .projects .box .about a:hover {
+  color: red;
+}
+.project .buttongroup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.project .buttongroup .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.project .buttongroup .buttons .button {
+  margin-top: 25px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project .buttongroup .buttons .button a {
+  text-decoration: none;
+  color: #000000;
+  background-color: #d9d9d9;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+  transition: all 0.3s;
+}
+.project .buttongroup .buttons .button a:hover {
+  background-color: #000000;
+  color: #d9d9d9;
+}
+
+@media only screen and (max-width: 1700px) {
+  .project {
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+    margin-bottom: 100px;
+  }
+  .project .title {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .project .title img {
+    width: 35px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .project .title img:hover {
+    filter: grayscale(0%);
+  }
+  .project .projects {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+  }
+  .project .projects .box {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all 0.3s;
+  }
+  .project .projects .box:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .project .projects .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: grayscale(0%);
+  }
+  .project .projects .box:hover img {
+    filter: grayscale(100%);
+  }
+  .project .projects .box .about {
+    position: absolute;
+    top: -100px !important;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: center;
+    padding: 0 20px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    white-space: normal;
+  }
+  .project .projects .box .about:hover {
+    opacity: 1;
+  }
+  .project .projects .box .about .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    text-align: start;
+    width: 100%;
+  }
+  .project .projects .box .about .progkod {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .project .projects .box .about a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .project .projects .box .about a:hover {
+    color: red;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .project {
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+    margin-bottom: 100px;
+  }
+  .project .title {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .project .title img {
+    width: 35px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .project .title img:hover {
+    filter: grayscale(0%);
+  }
+  .project .projects {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+  }
+  .project .projects .box {
+    width: 450px;
+    height: 300px;
+    position: relative;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all 0.3s;
+  }
+  .project .projects .box:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .project .projects .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: grayscale(0%);
+  }
+  .project .projects .box:hover img {
+    filter: grayscale(100%);
+  }
+  .project .projects .box .about {
+    position: absolute;
+    top: -100px !important;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: center;
+    padding: 0 20px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    white-space: normal;
+  }
+  .project .projects .box .about:hover {
+    opacity: 1;
+  }
+  .project .projects .box .about .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    text-align: start;
+    width: 100%;
+  }
+  .project .projects .box .about .progkod {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .project .projects .box .about a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .project .projects .box .about a:hover {
+    color: red;
+  }
+}
+@media only screen and (max-width: 1450px) {
+  .project {
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+    margin-bottom: 100px;
+  }
+  .project .title {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .project .title img {
+    width: 35px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .project .title img:hover {
+    filter: grayscale(0%);
+  }
+  .project .projects {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+  }
+  .project .projects .box {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all 0.3s;
+  }
+  .project .projects .box:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .project .projects .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: grayscale(0%);
+  }
+  .project .projects .box:hover img {
+    filter: grayscale(100%);
+  }
+  .project .projects .box .about {
+    position: absolute;
+    top: -100px !important;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: center;
+    padding: 0 20px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    white-space: normal;
+  }
+  .project .projects .box .about:hover {
+    opacity: 1;
+  }
+  .project .projects .box .about .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    text-align: start;
+    width: 100%;
+  }
+  .project .projects .box .about .progkod {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .project .projects .box .about a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .project .projects .box .about a:hover {
+    color: red;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .project {
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+    margin-bottom: 100px;
+  }
+  .project .title {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .project .title img {
+    width: 35px;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .project .title img:hover {
+    filter: grayscale(0%);
+  }
+  .project .projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+  }
+  .project .projects .box {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+  }
+  .project .projects .box:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .project .projects .box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: grayscale(0%);
+  }
+  .project .projects .box:hover img {
+    filter: grayscale(100%);
+  }
+  .project .projects .box .about {
+    position: absolute;
+    top: -100px !important;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    justify-content: center;
+    padding: 0 20px;
+    overflow-wrap: break-word;
+    overflow: auto;
+    white-space: normal;
+  }
+  .project .projects .box .about:hover {
+    opacity: 1;
+  }
+  .project .projects .box .about .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: normal;
+    text-align: start;
+    width: 100%;
+  }
+  .project .projects .box .about .progkod {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .project .projects .box .about a {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .project .projects .box .about a:hover {
+    color: red;
+  }
+}
 @media only screen and (max-width: 1250px) {
   header {
     padding-left: 2rem;
@@ -329,6 +886,49 @@ header .text #check:checked ~ .hamburger-menu span::after {
   #check:checked ~ .hamburger-menu {
     position: fixed;
     right: 2rem !important;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  .buttongroup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px !important;
+  }
+  .buttongroup .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .buttongroup .buttons .button {
+    margin-top: 25px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .buttongroup .buttons .button a {
+    text-decoration: none;
+    color: #000000;
+    background-color: #d9d9d9;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+    transition: all 0.3s;
+  }
+  .buttongroup .buttons .button a:hover {
+    background-color: #000000;
+    color: #d9d9d9;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -487,6 +1087,11 @@ header .text #check:checked ~ .hamburger-menu span::after {
     height: 75px !important;
     filter: grayscale(100%);
     margin: 0 20px !important;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .logos .logos-slide img:hover {
+    filter: grayscale(0%);
   }
 }
 @media only screen and (max-width: 560px) {
@@ -512,6 +1117,12 @@ header .text #check:checked ~ .hamburger-menu span::after {
   .about .container .title img {
     width: 25px;
     margin-left: 5px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .about .container .title img:hover {
+    filter: grayscale(0%);
   }
   .about .container .des {
     font-size: 1.1rem;
