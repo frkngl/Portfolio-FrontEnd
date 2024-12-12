@@ -40,7 +40,7 @@
         } 
 
         nav{
-            position: absolute;
+            position: fixed;
             top: 0;
             left: -100%;
             width: 100%;
@@ -171,8 +171,9 @@
         #check:checked ~ nav{
             left: 0;
         }
-        #check:checked ~ html,body{
-            height: 100vh;
+        #check:checked ~ .hamburger-menu{
+            position: fixed;
+            right: 10rem;
         }
         #check:checked ~ .hamburger-menu span::before{
             background-color: #000000;
@@ -183,11 +184,86 @@
       }
   }
 
+.content{
+    width: 100%;
+    height: calc(100vh - 110px);
+    background-color: #000000;
+
+    .text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+
+        .title{
+            font-size: 2.5rem;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .des{
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-style: normal;
+        }
+    }
+
+    .swiper{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+
+        .bi-chevron-double-down{
+            font-style: normal;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media only screen and (max-width:1250px) {
     header{
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    #check:checked ~ .hamburger-menu{
+        position: fixed;
+        right: 2rem !important;
     }
   }
   @media only screen and (max-width:800px){
