@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  ::selection{
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  header{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 60px;
+    background-color: #000000;
+    position: relative;
+
+    .text{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .title{
+
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 3.5rem;
+              }
+        } 
+
+        nav{
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            transition: all 0.3s ease-in-out;
+            
+            .menu{
+                display: flex;
+                height: 330px;
+
+                .title{
+                    height: 30px;
+                    font-size: 1.5rem;
+                    transform: rotate(-90deg);
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    font-style: normal;
+                    margin-top: 33px;
+                }
+
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+
+                    li{
+
+                        a{
+                            text-decoration: none;
+                            color: #000000;
+                            font-style: normal;
+                            font-weight: bolder;
+                            font-size: 3.5rem;
+                            padding: 2.5px;
+                            transition: all 0.3s;
+
+                            &:hover{
+                                background-color: #000000;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact{
+                height: 330px;
+                width: 330px;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                justify-content: end;
+
+                .address h5{
+                    font-style: normal;
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                }
+
+                .social{
+                    width: 263px;
+                    margin-bottom: 9px;
+
+                    a{
+                        font-size: 1.4rem;
+                        color: #000000;
+                        opacity: 0.3;
+                        transition: all 0.3s;
+
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        /*HAMBURGER YERİ*/
+        .hamburger-menu{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 9999;
+            margin-top: 5px;
+
+            span, span::before, span::after{
+                content: '';
+                display: block;
+                height: 5px;
+                width: 100%;
+                background-color: #ffffff;
+            }
+            span{
+                transform: translateY(20px);
+                transition:all 300ms;
+
+                &::before{
+                    position: absolute;
+                    transition:all 300ms;
+                    bottom: 15px;
+                }
+
+                &::after{
+                    position: absolute;
+                    transition:all 300ms;
+                    top: 15px;
+                }
+            }
+        }
+        
+        #check:checked + .hamburger-menu span{
+            background-color: transparent;
+            transition:all 300ms;
+        }
+        #check:checked + .hamburger-menu span::before{
+            transform: rotate(-45deg);
+            transition:all 300ms;
+            bottom: 0;
+        }
+        #check:checked + .hamburger-menu span::after{
+            transform: rotate(45deg);
+            transition:all 300ms;
+            top: 0;
+        }
+        #check:checked ~ nav{
+            left: 0;
+        }
+        #check:checked ~ html,body{
+            height: 100vh;
+        }
+        #check:checked ~ .hamburger-menu span::before{
+            background-color: #000000;
+        }
+        #check:checked ~ .hamburger-menu span::after{
+            background-color: #000000;
+        }
+      }
+  }
