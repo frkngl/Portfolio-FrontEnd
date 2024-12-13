@@ -426,6 +426,7 @@ header {
         justify-content: space-around;
         width: 100%;
         height: auto;
+        flex-wrap: wrap;
 
         .box {
             width: 500px;
@@ -433,6 +434,7 @@ header {
             position: relative;
             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
             transition: all 0.3s;
+            margin-bottom: 50px;
 
             &:hover {
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -509,7 +511,6 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
 
         .buttons {
             display: flex;
