@@ -367,7 +367,7 @@ header {
 
         .logos-slide {
             white-space: nowrap;
-            animation: 15s slide infinite linear;
+            animation: 30s slide infinite linear;
 
             img {
                 height: 100px;
@@ -619,6 +619,78 @@ footer {
                 font-size: 2.5rem;
             }
             
+        }
+    }
+}
+
+
+
+
+.about2 {
+    margin: 100px 0px !important;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+
+        .title {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            font-size: 1.8rem;
+            font-weight: 500;
+
+            img {
+                width: 25px;
+                margin-left: 5px;
+                filter: grayscale(100%);
+                transition: all 0.3s;
+                cursor: pointer;
+
+                &:hover {
+                    filter: grayscale(0%);
+                }
+            }
+        }
+
+        .des {
+            font-size: 1.1rem;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1.2;
+            text-align: start;
+        }
+
+        .button {
+            margin-top: 25px;
+            width: 100%;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                color: #000000;
+                background-color: #d9d9d9;
+                width: 250px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.1rem;
+                font-weight: 500;
+                font-style: normal;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: #000000;
+                    color: #d9d9d9;
+                }
+            }
         }
     }
 }
