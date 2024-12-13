@@ -242,6 +242,9 @@ header .text #check:checked ~ .hamburger-menu span::after {
   font-style: normal;
   line-height: 1.2;
   text-align: center;
+  overflow-wrap: break-word;
+  overflow: auto;
+  white-space: normal;
 }
 .about .container .button {
   margin-top: 25px;
@@ -578,6 +581,9 @@ footer .box .text a {
   font-style: normal;
   line-height: 1.2;
   text-align: start;
+  overflow-wrap: break-word;
+  overflow: auto;
+  white-space: normal;
 }
 .about2 .container .button {
   margin-top: 25px;
@@ -602,6 +608,132 @@ footer .box .text a {
   transition: all 0.3s;
 }
 .about2 .container .button a:hover {
+  background-color: #000000;
+  color: #d9d9d9;
+}
+
+.contactttttt {
+  width: 100%;
+  height: auto;
+  padding: 0 15rem;
+  margin: 100px 0px;
+}
+.contactttttt .title {
+  width: 100%;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+.contactttttt .title img {
+  width: 25px;
+  margin-left: 5px;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.contactttttt .title img:hover {
+  filter: grayscale(0%);
+}
+.contactttttt .mail {
+  margin-top: 25px;
+  width: 100%;
+}
+.contactttttt .mail .box1 {
+  display: flex;
+  width: 100%;
+}
+.contactttttt .mail .box1 .username {
+  width: 50%;
+}
+.contactttttt .mail .box1 .username .title {
+  font-size: 1.1rem !important;
+  font-style: normal;
+  font-weight: 500;
+  width: 95%;
+}
+.contactttttt .mail .box1 .username .text {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #000000;
+  width: 95%;
+  margin-top: 10px;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.contactttttt .mail .box1 .email {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.contactttttt .mail .box1 .email .title {
+  font-size: 1.1rem !important;
+  font-style: normal;
+  font-weight: 500;
+  width: 95%;
+}
+.contactttttt .mail .box1 .email .mail {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #000000;
+  width: 95%;
+  margin-top: 10px;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.contactttttt .mail .box2 {
+  margin-top: 50px;
+}
+.contactttttt .mail .box2 .message {
+  width: 100%;
+}
+.contactttttt .mail .box2 .message .title {
+  font-size: 1.1rem !important;
+  font-style: normal;
+  font-weight: 500;
+  width: 100%;
+}
+.contactttttt .mail .box2 .message .messagetext {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #000000;
+  width: 100%;
+  margin-top: 10px;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.contactttttt .send {
+  width: 100%;
+  height: auto;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.contactttttt .send .sendbutton {
+  color: #000000;
+  background-color: #d9d9d9;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: normal;
+  transition: all 0.3s;
+  outline: none;
+  border: none;
+}
+.contactttttt .send .sendbutton:hover {
   background-color: #000000;
   color: #d9d9d9;
 }
@@ -862,6 +994,131 @@ footer .box .text a {
     font-weight: 500;
     font-size: 2.5rem;
   }
+  .contactttttt {
+    width: 100%;
+    height: auto;
+    padding: 0 5rem;
+    margin: 100px 0px;
+  }
+  .contactttttt .title {
+    width: 100%;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.8rem;
+  }
+  .contactttttt .title img {
+    width: 25px;
+    margin-left: 5px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .contactttttt .title img:hover {
+    filter: grayscale(0%);
+  }
+  .contactttttt .mail {
+    margin-top: 25px;
+    width: 100%;
+  }
+  .contactttttt .mail .box1 {
+    display: flex;
+    width: 100%;
+  }
+  .contactttttt .mail .box1 .username {
+    width: 50%;
+  }
+  .contactttttt .mail .box1 .username .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 95%;
+  }
+  .contactttttt .mail .box1 .username .text {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 95%;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .mail .box1 .email {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .contactttttt .mail .box1 .email .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 95%;
+  }
+  .contactttttt .mail .box1 .email .mail {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 95%;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .mail .box2 {
+    margin-top: 50px;
+  }
+  .contactttttt .mail .box2 .message {
+    width: 100%;
+  }
+  .contactttttt .mail .box2 .message .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+  }
+  .contactttttt .mail .box2 .message .messagetext {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .send {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .contactttttt .send .sendbutton {
+    color: #000000;
+    background-color: #d9d9d9;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+    transition: all 0.3s;
+    outline: none;
+    border: none;
+  }
+  .contactttttt .send .sendbutton:hover {
+    background-color: #000000;
+    color: #d9d9d9;
+  }
 }
 @media only screen and (max-width: 1450px) {
   .project {
@@ -1116,6 +1373,131 @@ footer .box .text a {
     background-color: #000000;
     color: #d9d9d9;
   }
+  .contactttttt {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    margin: 100px 0px;
+  }
+  .contactttttt .title {
+    width: 100%;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.8rem;
+  }
+  .contactttttt .title img {
+    width: 25px;
+    margin-left: 5px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .contactttttt .title img:hover {
+    filter: grayscale(0%);
+  }
+  .contactttttt .mail {
+    margin-top: 25px;
+    width: 100%;
+  }
+  .contactttttt .mail .box1 {
+    display: flex;
+    width: 100%;
+  }
+  .contactttttt .mail .box1 .username {
+    width: 50%;
+  }
+  .contactttttt .mail .box1 .username .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 95%;
+  }
+  .contactttttt .mail .box1 .username .text {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 95%;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .mail .box1 .email {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .contactttttt .mail .box1 .email .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 95%;
+  }
+  .contactttttt .mail .box1 .email .mail {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 95%;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .mail .box2 {
+    margin-top: 50px;
+  }
+  .contactttttt .mail .box2 .message {
+    width: 100%;
+  }
+  .contactttttt .mail .box2 .message .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+  }
+  .contactttttt .mail .box2 .message .messagetext {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin-top: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .send {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .contactttttt .send .sendbutton {
+    color: #000000;
+    background-color: #d9d9d9;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+    transition: all 0.3s;
+    outline: none;
+    border: none;
+  }
+  .contactttttt .send .sendbutton:hover {
+    background-color: #000000;
+    color: #d9d9d9;
+  }
 }
 @media only screen and (max-width: 1000px) {
   footer {
@@ -1249,6 +1631,132 @@ footer .box .text a {
   }
   .contact .social a:hover {
     opacity: 1;
+  }
+  .contactttttt {
+    width: 100%;
+    height: auto;
+    padding: 0 16px;
+    margin: 100px 0px;
+  }
+  .contactttttt .title {
+    width: 100%;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.8rem;
+  }
+  .contactttttt .title img {
+    width: 25px;
+    margin-left: 5px;
+    filter: grayscale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .contactttttt .title img:hover {
+    filter: grayscale(0%);
+  }
+  .contactttttt .mail {
+    margin-top: 25px;
+    width: 100%;
+  }
+  .contactttttt .mail .box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contactttttt .mail .box1 .username {
+    width: 100%;
+  }
+  .contactttttt .mail .box1 .username .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+  }
+  .contactttttt .mail .box1 .username .text {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .mail .box1 .email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .contactttttt .mail .box1 .email .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+  }
+  .contactttttt .mail .box1 .email .mail {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .mail .box2 {
+    margin-top: 25px;
+  }
+  .contactttttt .mail .box2 .message {
+    width: 100%;
+  }
+  .contactttttt .mail .box2 .message .title {
+    font-size: 1.1rem !important;
+    font-style: normal;
+    font-weight: 500;
+    width: 100%;
+  }
+  .contactttttt .mail .box2 .message .messagetext {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #000000;
+    width: 100%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .contactttttt .send {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .contactttttt .send .sendbutton {
+    color: #000000;
+    background-color: #d9d9d9;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: normal;
+    transition: all 0.3s;
+    outline: none;
+    border: none;
+  }
+  .contactttttt .send .sendbutton:hover {
+    background-color: #000000;
+    color: #d9d9d9;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1394,5 +1902,8 @@ footer .box .text a {
     font-style: normal;
     line-height: 1.2;
     text-align: center;
+    overflow-wrap: break-word;
+    overflow: auto;
+    white-space: normal;
   }
 }/*# sourceMappingURL=style.css.map */
